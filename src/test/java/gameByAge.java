@@ -28,12 +28,12 @@ public class gameByAge {
             }
         }
         int k = 0;
-        for (String expected : expectedOutput) {
+        for (String expected : actualResult) {
             System.out.println(expected);
 
             //Assert
-            Assert.assertEquals(expectedOutput.get(k),expected);
-            k++;
+            Assert.assertEquals(actualResult.get(k++),expected);
+
         }
     }
 }
